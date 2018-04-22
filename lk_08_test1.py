@@ -21,4 +21,22 @@ while True:
     except ValueError:
         print("Oops!  That was no valid number.  Try again...")
 
+# example of try...except
+import sys
+
+import sys
+
+try:
+    f = open('myfile.txt')
+    s = f.readline()
+    i = int(s.strip())
+except OSError as err:
+    print("OS error: {0}".format(err))
+except ValueError:
+    print("Could not convert data to an integer.")
+except Exception:
+    print("Unexpected error:", sys.exc_info()[0])
+    raise
+
+
 

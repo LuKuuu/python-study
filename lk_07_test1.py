@@ -34,7 +34,7 @@ print('The value of PI is approximately {0:.5f}.'.format(math.pi))
 
 table = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 7678}
 for name, phone in table.items():
-    print('{0:10} ==> {1:10}'.format(name, phone))
+    print('{0:10} ==> {1:5}'.format(name, phone))
 
 
 
